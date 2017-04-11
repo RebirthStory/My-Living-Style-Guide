@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--My Living Style Guide UI Components Page-->
+<!--Jason Mu-->
+<!--S213250-->
+<html>
+
+<head>
+    <title>UI Components - My Living Style Guide</title>
+    <meta name="author" content="Jason Mu" />
+    <meta charset="utf-8">
+    <meta name="description" content="My Living Style Guide UI Components Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css" /> 
+    
+    <!-- polyfills used for backwards compatibility -->
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.js"></script>
+    </head>
+
+<body>
+    <header>
+        <h1>UI Components</h1> </header>
+    <nav>
+        <ul class="nav">
+            <li class="navlist"><a href="index.html">Home</a> </li>
+            <li class="navlist"><a href="colourpalette.html">Colour Palette</a></li>
+            <li class="navlist"><a href="typography.html">Typography</a></li>
+            <li class="navlist"><a href="tableandform.html">Tables and Forms</a></li>
+            <li class="navlist"><a href="layoutandgrid.html">Layouts and Grids</a></li>
+            <li class="navlist"><a class="active" href="useful.html">UI Components</a></li>
+            <li class="navlist"><a href="about.html">About</a></li>
+            <li class="navlist"><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>UI Components Page</h2>
+        <article class="articleformat">
+            <h2>What components to use?</h2>
+            <p>This page contains information about other User Interface Components that are useful when creating websites.</p>
+        </article>
+        <article class="articleformat">
+            <h2>Buttons</h2>
+            <p>Buttons are important components of websites as they are used to link to other webpages and submit forms. In the example below, they can be used to improve the readibility of text. JavaScript Reference: <a href="https://github.com/HIT226/Week-5-JS-Event-Listeners"><cite>Week-5-JS-Event-Listeners</cite></a></p>
+            <div class="paragraphFormat">
+                <p> Click on the coloured buttons to toggle the colour of the text. </p>
+            </div>
+            <div class="buttons">
+                <button type="button" aria-label="changes text to red colour" class="redbutton" id="toggle_red">Red</button>
+            </div>
+            <p class="example_text" id="example_text_red">Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu.</p>
+            <div class="buttons">
+                <button type="button" aria-label="changes text to green colour" class="greenbutton" id="toggle_green">Green</button>
+            </div>
+            <p class="example_text" id="example_text_green">Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu.</p>
+            <div class="buttons">
+                <button type="button" aria-label="changes text to blue colour" class="bluebutton" id="toggle_blue">Blue</button>
+            </div>
+            <p class="example_text" id="example_text_blue">Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu.</p>
+            <div class="paragraphFormat">
+                <p> Click on the font-size buttons to toggle the font-size of the text. </p>
+            </div>
+            <div class="buttons">
+                <button type="button" aria-label="changes text to 32px" class="32px_button" id="toggle_32">32px</button>
+            </div>
+            <p class="example_text" id="example_text_32">Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu.</p>
+            <div class="buttons">
+                <button type="button" aria-label="changes text to 64px"  class="toggle_64" id="toggle_64">64px</button>
+            </div>
+            <p class="example_text" id="example_text_64">Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu.</p>
+        </article>
+        <article class="articleformat">
+            <h2>Card Based Designs</h2>
+            <p>Card based designs can be used to make certain information on the website stand out and look like they can be clicked-on to get into more information - design inspired from a <a href="references.html"><cite>HIT226 (2017)</cite></a> exercise. </p>
+            <article class="cgrid" role="main">
+                <article class="card">
+                    <div class="ctext">
+                        <h2 class="card__title">This is what a card looks like</h2>
+                        <p>Enter some text here....</p>
+                        <p>Add a picture...</p>
+                    </div>
+                    <footer class="card__footer"> <a href="#" class="card__link" aria-label="button for card based design and is not currently coded to link anywhere">Click Here</a> </footer>
+                </article>
+                <article class="card">
+                    <div class="ctext">
+                        <h2 class="card__title">This is what a card looks like</h2>
+                        <p>Enter some text here...</p>
+                        <p>Add a picture...</p>
+                    </div>
+                    <footer class="card__footer"> <a href="#" class="card__link" aria-label="button for card based design and is not currently coded to link anywhere">Click Here</a> </footer>
+                </article>
+                <article class="card">
+                    <div class="ctext">
+                        <h2 class="card__title">This is what a card looks like</h2>
+                        <p>Enter some text here...</p>
+                        <p>Add a picture...</p>
+                    </div>
+                    <footer class="card__footer"> <a href="#" class="card__link" aria-label="button for card based design and is not currently coded to link anywhere">Click Here</a> </footer>
+                </article>
+            </article>
+            <p>Check out the HTML and CSS Source Code for the Card Design by clicking the toggle buttons. JavaScript Reference: <a href="https://github.com/HIT226/Week-5-JS-Event-Listeners"><cite>Week-5-JS-Event-Listeners</cite></a></p>
+            <div class="source_code">
+
+            <button type="button" aria-label="button toggles html code to display" id="toggle_source">Show/Hide HTML Source Code</button>
+            
+            <pre class="card_source_code" id="source_code">
+            <label>HTML for Card Design</label>
+            &lt;article class="cgrid" role="main"&gt;
+                &lt;article class="card"&gt;
+                    &lt;div class="ctext"&gt;
+                        &lt;h2 class="card__title"&gt;This is what a card looks like&lt;/h2&gt;
+                        &lt;p&gt;Enter some text here....&lt;/p&gt;
+                        &lt;p&gt;Add a picture...&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class="card__footer"&gt; &lt;a href="#" class="card__link"&gt;Click Here&lt;/a&gt; &lt;/footer&gt;
+                &lt;/article&gt;
+                &lt;article class="card"&gt;
+                    &lt;div class="ctext"&gt;
+                        &lt;h2 class="card__title"&gt;This is what a card looks like&lt;/h2&gt;
+                        &lt;p&gt;Enter some text here...&lt;/p&gt;
+                        &lt;p&gt;Add a picture...&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class="card__footer"&gt; &lt;a href="#" class="card__link"&gt;Click Here&lt;/a&gt; &lt;/footer&gt;
+                &lt;/article&gt;
+                &lt;article class="card"&gt;
+                    &lt;div class="ctext"&gt;
+                        &lt;h2 class="card__title"&gt;This is what a card looks like&lt;/h2&gt;
+                        &lt;p&gt;Enter some text here...&lt;/p&gt;
+                        &lt;p&gt;Add a picture...&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class="card__footer"&gt; &lt;a href="#" class="card__link"&gt;Click Here&lt;/a&gt; &lt;/footer&gt;
+                &lt;/article&gt;
+            &lt;/article&gt;
+            </pre>
+        </div>
+        <div class="css_code">
+            <button type="button" aria-label="button toggles css code to display" id="toggle_css">Show/Hide CSS Source Code</button>
+            
+            <pre class="card_css_code" id="css_code">
+            <label>CSS for Card Design</label>
+            .cgrid {
+            padding-top: 40px;
+            padding-bottom: 14px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .cgrid::after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            .card {
+            background-color: white;
+            color: black;
+            color: rgba(0, 0, 0, 0.87);
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            overflow: hidden;
+            margin-bottom: 28px;
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            }
+
+            .card:nth-child(3n) {
+            margin-right: 0;
+            }
+
+            .card__image {
+            width: 100%;
+            }
+
+            .ctext,
+            .card__footer {
+            text-align: center;
+            padding-left: 14px;
+            padding-right: 14px;
+            }
+
+            .card__title {
+            font-size: 17px;
+            }
+
+            .card__link {
+            padding: 7px 24px;
+            margin-bottom: 14px;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            background-color: dodgerblue;
+            transition: background-color 100ms;
+            }
+
+            .card__link:hover,
+            .card__link:focus {
+            background-color: #0288D1;
+            }
+
+            .card__link:active {
+            background-color: #039BE5;
+            }
+            </pre>
+        </div>
+        </article>
+        <script type="text/javascript" src="js/togglefontandcode.js"></script>
+        <article class="articleformat">
+            <h2>Images with 'mouseenter' and 'mouse'Leave' Event Listeners</h2>
+                <p class="paragraphFormat"> Move mouse cursor into image and out of image to toggle two different images.</p>
+                <figure class="fig_size" id="toggle_image_1"> <img class="mouse_image" src="images/goku.jpg" alt="image of dragonball z character Goku wearing his standard gi outfit standing in black-coloured background">
+                <figcaption><cite><a href="http://orig01.deviantart.net/2f5c/f/2012/351/b/6/gokus_transformations_of_super_saiyan_by_lucho1395-d5od57b.jpg">Goku</a></cite></figcaption>
+                </figure>
+            
+                <figure class="fig_size image_display_none" id="toggle_image_2"> <img class="mouse_image" src="images/ssgoku.jpg" alt="image of dragonball z character Goku in super saiyan form wearing his standard gi outfit standing in black-coloured background">
+                <figcaption><cite><a href="http://orig01.deviantart.net/2f5c/f/2012/351/b/6/gokus_transformations_of_super_saiyan_by_lucho1395-d5od57b.jpg">Super Saiyan Goku</a></cite></figcaption>
+                </figure>
+        </article>
+        <script type="text/javascript" src="js/mousemove.js"></script>
+    </section>
+    <footer>
+        <p> Copyright &copy; 2017
+            <br> Jason Mu
+            <br> S213250
+            <br> </p>
+    </footer>
+</body>
+
+</html>

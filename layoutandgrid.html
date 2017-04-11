@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--My Living Style Guide Layouts and Grids Page-->
+<!--Jason Mu-->
+<!--S213250-->
+<html>
+
+<head>
+    <title>Layouts and Grids - My Living Style Guide</title>
+    <meta name="author" content="Jason Mu" />
+    <meta charset="utf-8">
+    <meta name="description" content="My Living Style Guide Layouts and Grids Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- polyfills used for backwards compatibility -->
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Layouts and Grids</h1> </header>
+    <nav>
+        <ul class="nav">
+            <li class="navlist"><a href="index.html">Home</a> </li>
+            <li class="navlist"><a href="colourpalette.html">Colour Palette</a></li>
+            <li class="navlist"><a href="typography.html">Typography</a></li>
+            <li class="navlist"><a href="tableandform.html">Tables and Forms</a></li>
+            <li class="navlist"><a class="active" href="layoutandgrid.html">Layouts and Grids</a></li>
+            <li class="navlist"><a href="useful.html">UI Components</a></li>
+            <li class="navlist"><a href="about.html">About</a></li>
+            <li class="navlist"><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Layouts and Grids Page</h2>
+        <article class="articleformat">
+            <h2>Layouts</h2>
+            <h3>Single-column Layout</h3>
+            <p>This is a basic single-column layout with a fixed width and is centered horizontally on the webpage.</p>
+            <div class="singlelayout">
+                <p> Tempor cillum laboris aliqua incididunt Lorem ex dolore veniam exercitation sit. Incididunt irure ut irure anim eiusmod qui. Veniam laborum sit proident eiusmod et aliquip. Proident excepteur cillum magna labore officia nulla labore sunt eiusmod proident velit deserunt irure anim. Fugiat laboris deserunt consequat id excepteur do magna quis id et laboris eu. Consequat fugiat sint irure consectetur non fugiat sint. Ea consectetur do pariatur duis Lorem culpa velit minim culpa elit exercitation nulla labore. Ad consequat minim pariatur aute est elit. Quis aute sit ipsum do ad nostrud reprehenderit elit. Nulla id sint eu aute reprehenderit irure esse quis eu velit qui nulla pariatur. Dolore anim occaecat exercitation qui ipsum veniam veniam ipsum labore quis eu nulla sint cupidatat. Ipsum do culpa minim Lorem consequat dolore nisi nostrud. Pariatur qui aliqua voluptate incididunt proident excepteur reprehenderit est. Dolore aliqua tempor dolor esse deserunt eu non cupidatat. </p>
+                <p> Excepteur aliqua sint fugiat nulla veniam fugiat cillum consectetur. Cupidatat elit eiusmod aute officia labore. Irure qui officia tempor ipsum voluptate in sit cillum laboris sit laborum sit eiusmod magna. </p>
+            </div>
+            <h3>Two-column Layout</h3>
+            <p>This is a basic two-column layout. Both the single-column and two-column layouts are inspired by <a href="references.html"><cite>Holiday Pirates (2017)</cite></a>. </p>
+            <div class="tcsidebarA">
+                <ul>
+                    <li>Category A</li>
+                </ul>
+            </div>
+            <div class="tcpA">
+                <p> Duis qui tempor laborum veniam irure ex dolor tempor. Enim ullamco elit aute deserunt tempor ullamco aliquip culpa reprehenderit do. Minim mollit commodo do ullamco eiusmod minim minim velit ea cupidatat ipsum ad et nulla. Magna cupidatat sint Lorem occaecat nulla minim amet. Veniam minim et esse est consectetur labore. Velit in irure mollit ea dolore occaecat laboris veniam velit nostrud minim. Nostrud magna non exercitation aliquip excepteur anim ea ipsum nostrud dolor. Elit amet officia cillum et occaecat excepteur aliquip quis irure. Ea cupidatat dolore laborum officia ullamco irure occaecat ipsum et labore nostrud veniam cupidatat adipisicing. Exercitation do quis nisi proident nisi sint aliqua Lorem voluptate minim ad. Est enim id reprehenderit dolore enim aliqua ex aliqua in tempor. </p>
+            </div>
+            <div class="tcsidebarB">
+                <ul>
+                    <li>Category B</li>
+                </ul>
+            </div>
+            <div class="tcpB">
+                <p> Mollit aliqua aliquip commodo veniam. Eiusmod ut laborum ipsum aliquip aliquip cupidatat aliquip esse. Amet nulla cillum exercitation cupidatat exercitation qui fugiat commodo ex anim cupidatat voluptate magna consectetur. Enim ad qui tempor proident excepteur aliquip officia anim adipisicing consequat nisi aliqua non. In aute dolore non ex. Incididunt ex pariatur cupidatat do qui magna non veniam dolore cillum qui consequat enim. Proident sit sint occaecat aliquip cupidatat incididunt adipisicing tempor occaecat tempor sint nostrud. </p>
+            </div>
+        </article>
+        <article class="articleformat grids">
+            <h2>Grids</h2>
+            <h3>Grid Sizes</h3>
+            <p>A grid system that can be used when creating websites is the one shown below that uses 8 flexible columns. There is a gutter between columns that is 30px wide. A border-box is applied so that the border and padding is included in the width of the grid columns. JavaScript Reference: <a href="https://github.com/HIT226/Week-5-JS-Event-Listeners"><cite>Week-5-JS-Event-Listeners</cite></a></p>
+            <div class="vis_btn">
+                <button type="button" id="toggle_grid_btn">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_grid"> <img class="imggridsizes" src="images/gridsizes.JPG" alt="Grid Sizes Diagram showing size of 1/1, size of 1/2, size of 1/3, size of 1/4 and size of 1/8 grid sizes">
+                <figcaption>Grid Sizes Diagram <a href="references.html"><cite>(Mailchimp 2016)</cite></a></figcaption>
+            </figure>
+            <!--alt attribute and <figcaption> has been used to increase accessibility for this website-->
+            <h3>Grid Gutters</h3>
+            <p>The grid columns have a 15px padding on each side which results in the 30px gutter between columns and a 15px gutter on the grid edges.</p>
+            <div class="vis_btn">
+                <button type="button" id="toggle_grid_btn2">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_grid2"> <img class="imggridgutters" src="images/gridgutter.JPG" alt="Grid gutters Diagram showing size 1/3 grid columns that have 15px padding on each side">
+                <figcaption>Grid Gutter Diagram <a href="references.html"><cite>(Mailchimp 2016)</cite></a></figcaption>
+            </figure>
+        </article>
+        <script type="text/javascript" src="js/togglegrid.js"></script>
+    </section>
+    <footer>
+        <p> Copyright &copy; 2017
+            <br> Jason Mu
+            <br> S213250
+            <br> </p>
+    </footer>
+</body>
+
+</html>

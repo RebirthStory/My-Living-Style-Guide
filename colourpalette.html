@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--My Living Style Guide Colour Palette Page-->
+<!--Jason Mu-->
+<!--S213250-->
+<html>
+
+<head>
+    <title>Colour Palette - My Living Style Guide</title>
+    <meta name="author" content="Jason Mu" />
+    <meta charset="utf-8">
+    <meta name="description" content="My Living Style Guide Colour Palette Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- polyfills used for backwards compatibility -->
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.js"></script>
+    </head>
+
+<body>
+    <header>
+        <h1>Colour Palette</h1> </header>
+    <nav>
+        <ul class="nav">
+            <li class="navlist"><a href="index.html">Home</a> </li>
+            <li class="navlist"><a class="active" href="colourpalette.html">Colour Palette</a></li>
+            <li class="navlist"><a href="typography.html">Typography</a></li>
+            <li class="navlist"><a href="tableandform.html">Tables and Forms</a></li>
+            <li class="navlist"><a href="layoutandgrid.html">Layouts and Grids</a></li>
+            <li class="navlist"><a href="useful.html">UI Components</a></li>
+            <li class="navlist"><a href="about.html">About</a></li>
+            <li class="navlist"><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Colour Palette Page</h2>
+        <article class="articleformat">
+            <h2>What colours to use?</h2>
+            <p>Colours used within this website have passed at least WCAG AA standard when running them through the <a href="http://webaim.org/resources/contrastchecker/">Webaim.org Colour Contrast Checker</a>.</p>
+            <p>Their use is definitely recommended when creating or modifying webpages on this website because it promotes accessibility - and because of the WCAG AA rating, these colour schemes can also be used for when creating websites for Government Agencies.</p>
+            <p>The information below contains details in regards to what colours are used, where they are used and their ratings.</p>
+        </article>
+        <article class="articleformat">
+            <h2 class="headings2">Text Colours</h2>
+            <ul class="textcolourul">
+                <li class="textcolourli">Text colour used for Header, Navigation and Footer is White (#FFFFFF)</li>
+                <li class="textcolourli">Text colour used for Section is Black (#000000)</li>
+            </ul>
+        </article>
+        <article class="articleformat">
+            <h2>Header and Footer Colours</h2>
+            <ul>
+                <li>Background colour used for the Header and Footer is a light purple-type colour (#494E6B)</li>
+                <li>In conjunction with the white-coloured text it has a contrast ratio of 7.45:1</li>
+                <li>JavaScript Reference: <a href="https://github.com/HIT226/Week-5-JS-Event-Listeners"><cite>Week-5-JS-Event-Listeners</cite></a></li>
+            </ul>
+            <div class="vis_btn">
+                <button type="button" id="toggle_vis_btn">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_fig"> <img src="images/headerfootercontrast.JPG" alt="Normal Text - wgag aa:pass, wcag aaa:pass, sample: i am normal text. Large Text - wcag aa: pass, wcag aaa: pass, sample: i am large text">
+                <figcaption>Header and Footer WCAG Rating <a href="references.html"><cite>(WebAIM 2017)</cite></a></figcaption>
+            </figure>
+        </article>
+        <article class="articleformat">
+            <h2>Navigation Bar Colours</h2>
+            <h3>Navigation Bar</h3>
+            <ul>
+                <li>Background colour used for the Navigation Bar is a dark blue-type colour (#192231)</li>
+                <li>In conjunction with the white-coloured text it has a contrast ratio of 15.98:1 </li>
+            </ul>
+            <div class="vis_btn">
+                <button type="button" id="toggle_vis_btn2">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_fig2"> <img src="images/navcontrast.JPG" alt="Normal Text - wgag aa:pass, wcag aaa:pass, sample: i am normal text. Large Text - wcag aa: pass, wcag aaa: pass, sample: i am large text">
+                <figcaption>Navigation Bar WCAG Rating <a href="references.html"><cite>(WebAIM 2017)</cite></a></figcaption>
+            </figure>
+            <h3>Active Tab</h3>
+            <ul>
+                <li>Background colour used for an active tab on the Navigation Bar is a maroon-type colour (#985E6D)</li>
+                <li>In conjunction with the white-coloured text it has a contrast ratio of 5.05:1</li>
+            </ul>
+            <div class="vis_btn">
+                <button type="button" id="toggle_vis_btn3">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_fig3"> <img src="images/navactivecontrast.JPG" alt="Normal Text - wgag aa:pass, wcag aaa:fail, sample: i am normal text. Large Text - wcag aa: pass, wcag aaa: pass, sample: i am large text">
+                <figcaption>Active Tab WCAG Rating <a href="references.html"><cite>(WebAIM 2017)</cite></a></figcaption>
+            </figure>
+            <h3>Hovering Over Tabs</h3>
+            <ul>
+                <li>Background colour used for when hovering over a tab on the Navigation Bar is a red-type colour (#E20004)</li>
+                <li>In conjunction with the white-coloured text it has a contrast ratio of 4.96:1</li>
+            </ul>
+            <div class="vis_btn">
+                <button type="button" id="toggle_vis_btn4">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_fig4"> <img src="images/navhovercontrast.JPG" alt="Normal Text - wgag aa:pass, wcag aaa:fail, sample: i am normal text. Large Text - wcag aa: pass, wcag aaa: pass, sample: i am large text">
+                <figcaption>Navigation Bar Hover WCAG Rating <a href="references.html"><cite>(WebAIM 2017)</cite></a></figcaption>
+            </figure>
+        </article>
+        <article class="articleformat">
+            <h2>Section Colours</h2>
+            <ul>
+                <li>Background colour used for Section is a beige-type colour (#F5F1DE)</li>
+                <li>In conjunction with the black-coloured text it has a contrast ratio of 18.52:1 </li>
+            </ul>
+            <div class="vis_btn">
+                <button type="button" id="toggle_vis_btn5">Show/Hide Image</button>
+            </div>
+            <figure id="toggle_fig5"> <img src="images/sectioncontrast.JPG" alt="Normal Text - wgag aa:pass, wcag aaa:fail, sample: i am normal text. Large Text - wcag aa: pass, wcag aaa: pass, sample: i am large text">
+                <figcaption>Section WCAG Rating <a href="references.html"><cite>(WebAIM 2017)</cite></a></figcaption>
+            </figure>
+        </article>
+        <script type="text/javascript" src="js/togglefig.js"></script>
+    </section>
+    <footer>
+        <p> Copyright &copy; 2017
+            <br> Jason Mu
+            <br> S213250
+            <br> </p>
+    </footer>
+</body>
+
+</html>

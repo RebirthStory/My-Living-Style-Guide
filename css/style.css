@@ -1,0 +1,487 @@
+/* My Living Style Guide CSS*/
+/* Jason Mu */
+/* S213250 */
+
+
+/*** main styling used on all pages ***/
+
+body {
+    background-image: url(background/background.png);
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: double white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #494E6B;
+    color: white;
+    text-align: center;
+    border: solid #494E6B;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #192231;
+    text-align: center;
+}
+
+.navlist {
+    display: inline;
+}
+
+.navlist a {
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    background-color: #FF3B3F;
+}
+
+.active {
+    background-color: #985E6D;
+}
+
+section {
+    padding: 10px;
+    background-color: #F5F1DE;
+}
+
+h1 {
+    margin-left: 1%;
+}
+
+.articleformat,
+.div_format{
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+
+/*** font styling for typography page ***/
+
+.georgia {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+}
+
+.tahoma {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 20px;
+}
+
+.times {
+    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+    font-size: 20px;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+
+/*** styling for colour palette page ***/
+figure {
+    text-align: center;
+}
+
+.vis_btn {
+    text-align: center;
+}
+
+.toggle_fig_display {
+    display: none;
+}
+
+
+/*** styling for tables and forms page ***/
+
+/* styling for table */
+table {
+    border: double;
+    border-collapse: collapse;
+    width: 55%;
+    margin: auto;
+}
+
+tr,
+td,
+th {
+    border: double;
+    text-align: center;
+}
+
+caption {
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+/* styling used for forms */
+.fieldcomponents,
+.radiobuttons,
+.checkboxes,
+.localStorageComponent {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#userInput {
+    margin-bottom: 1%;
+}
+
+.output_box {
+    margin-top: 2%;
+}
+
+/* styling used for local storage component*/
+.heading_3{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.local_storage_component{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.local_storage_component h4{
+    background: #494E6B;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.local_storage_component input[type="text"],
+.local_storage_component input[type="date"],
+.local_storage_component input[type="datetime"],
+.local_storage_component input[type="email"],
+.local_storage_component input[type="number"],
+.local_storage_component input[type="search"],
+.local_storage_component input[type="time"],
+.local_storage_component input[type="url"],
+.local_storage_component textarea,
+.local_storage_component select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.local_storage_component input[type="text"]:focus,
+.local_storage_component input[type="date"]:focus,
+.local_storage_component input[type="datetime"]:focus,
+.local_storage_component input[type="email"]:focus,
+.local_storage_component input[type="number"]:focus,
+.local_storage_component input[type="search"]:focus,
+.local_storage_component input[type="time"]:focus,
+.local_storage_component input[type="url"]:focus,
+.local_storage_component textarea:focus,
+.local_storage_component select:focus
+{
+    box-shadow: 0 0 5px #985E6D;
+    padding: 3%;
+    border: 1px solid #494E6B;
+}
+
+.local_storage_component input[type="submit"],
+.local_storage_component input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #985E6D;
+    border: 1px solid #96485d;
+  
+    color: #fff;
+}
+.local_storage_component input[type="button"]:hover{
+    background: #96485d;
+}
+
+#output {
+    text-align: center;
+}
+
+.local_reference {
+    margin: auto;
+    width: 40%;
+}
+
+
+/*** styling used for layouts and grids page ***/
+.singlelayout {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.tcsidebarA {
+    float: left;
+}
+
+.tcsidebarB {
+    clear: both;
+    float: left;
+}
+
+.tcpA,
+.tcpB {
+    float: right;
+    width: 80%;
+}
+
+.grids {
+    clear: both;
+}
+
+.imggridsizes {
+    width: 60%;
+}
+
+.imggridgutters {
+    width: 70%;
+}
+
+.paragraphFormat {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/*** styling used for UI components page ***/
+
+/* styling for buttons */
+.buttons {
+    text-align: center;
+}
+
+.redbutton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.redbutton:hover {
+    background-color: darkred;
+}
+
+.greenbutton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.greenbutton:hover {
+    background-color: darkgreen;
+}
+
+.bluebutton {
+    background-color: #003399;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bluebutton:hover {
+    background-color: darkblue;
+}
+
+.example_text {
+    text-align: center;
+}
+
+.color_change_red {
+    color: red;
+}
+
+.color_change_green {
+    color: green;
+}
+
+.color_change_blue {
+    color: #003399;
+}
+
+.toggle_32px {
+    font-size: 32px;
+}
+
+.toggle_64px {
+    font-size: 64px;
+}
+
+/* styling for card design */
+.cgrid {
+    padding-top: 40px;
+    padding-bottom: 14px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cgrid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+    margin-bottom: 28px;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.ctext,
+.card__footer {
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.card__title {
+    font-size: 17px;
+}
+
+.card__link {
+    padding: 7px 24px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: dodgerblue;
+    transition: background-color 100ms;
+}
+
+.card__link:hover,
+.card__link:focus {
+    background-color: #0288D1;
+}
+
+.card__link:active {
+    background-color: #039BE5;
+}
+
+.card_source_code {
+    color: white;
+    background-color: #192231;
+    display: none;
+}
+
+.card_css_code {
+    color: white;
+    background-color: #192231;
+    display: none;
+}
+
+.source_code, 
+._css_code {
+    margin-bottom: 2%;
+}
+
+.code_display {
+    display: inherit;
+}
+
+/* styling for images of goku */
+.mouse_image {
+    width: 40%;
+}
+
+.fig_size {
+    width: 40%;
+    margin: auto;
+}
+
+.image_display_none {
+    display: none;
+}
+
+.image_display_inherit {
+    display: inherit;
+}
+
+
+/*** styling for footer of every page ***/
+footer p {
+    color: white;
+}
+
+footer {
+    background-color: #494E6B;
+    text-align: right;
+    border: solid #494E6B
+}
+
+
+/*** Media queries ***/
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){    
+    .nav {
+        float: left;
+        width: 45%;
+        
+    }
+    section {
+        float: right;
+        width: 45%;
+    }
+
+    footer{
+        clear: both;
+    }
+}

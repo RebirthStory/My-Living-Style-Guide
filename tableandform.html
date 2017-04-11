@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--My Living Style Guide Tables and Forms Page-->
+<!--Jason Mu-->
+<!--S213250-->
+<html>
+
+<head>
+    <title>Tables and Forms - My Living Style Guide</title>
+    <meta name="author" content="Jason Mu" />
+    <meta charset="utf-8">
+    <meta name="description" content="My Living Style Guide Tables and Forms Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/vendor/sweetalert2.css" />
+    <!-- polyfills used for backwards compatibility -->
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tables and Forms</h1> </header>
+    <nav>
+        <ul class="nav">
+            <li class="navlist"><a href="index.html">Home</a> </li>
+            <li class="navlist"><a href="colourpalette.html">Colour Palette</a></li>
+            <li class="navlist"><a href="typography.html">Typography</a></li>
+            <li class="navlist"><a class="active" href="tableandform.html">Tables and Forms</a></li>
+            <li class="navlist"><a href="layoutandgrid.html">Layouts and Grids</a></li>
+            <li class="navlist"><a href="useful.html">UI Components</a></li>
+            <li class="navlist"><a href="about.html">About</a></li>
+            <li class="navlist"><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Tables and Forms Page</h2>
+        <article class="articleformat">
+            <h2>Tables</h2>
+            <p>In order to make tables more accessible when creating them, the following should be done:</p>
+            <ul>
+                <li>Name the table using the &lt;caption&gt; element</li>
+                <li>Designate row and column headers by using the &lt;th&gt; element </li>
+                <li>Designate table data cells by using the &lt;td&gt; element</li>
+                <li>Use scope attribute to name distinguish columns and rows</li>
+            </ul>
+            <table>
+                <caption>Students of CDU</caption>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Student No</th>
+                    <th scope="col">Course</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>s000001</td>
+                    <td>BIT</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>s000002</td>
+                    <td>BIT</td>
+                </tr>
+                <tr>
+                    <td>Jason</td>
+                    <td>s213250</td>
+                    <td>BIT</td>
+                </tr>
+            </table>
+        </article>
+        <article class="articleformat">
+            <h2>Form Elements</h2>
+            <p>The components listed below are the basic building blocks for creating form elements on websites - elements inspired by <a href="references.html"><cite>HIT226 (2017)</cite></a>.</p>
+            <div class="fieldcomponents">
+                <h3 class="heading_3">Input Field Component with 'input' Event Listener</h3>
+                <p class="paragraphFormat">Enter integers into input fields to add them:</p>
+                <label>Input Fields:</label>
+                <label for="input_1">
+                    <input type="text" name="input_1" id="input_1"> </label>
+                <label>+</label>
+                <label for="input_2">
+                    <input type="text" name="input_2" id="input_2">
+                </label>
+                <pre id="sum_output"></pre>
+                
+                <p>               
+                JavaScript Reference: <a href="https://www.youtube.com/watch?v=e57ReoUn6kM"><cite>LearnCode.academy</cite></a></p>
+            </div>
+            <script type="text/javascript" src="js/inputfields.js"></script>
+            
+            <h3 class="heading_3">Local Storage Component with 'click' Event Listener</h3>
+            <div class="local_storage_component">
+                <h4>Contact Us</h4>
+                <form class="localstorage_form">
+                    <label>Name:</label>
+                    <label for="name_input">
+                        <input type="text" name="name_input" id="name_input"> </label>
+                    <label>Email:</label>
+                    <label for="email_input">
+                        <input type="text" name="email_input" id="email_input" onblur="validate_email(this);"> </label>
+                    <label>Message:</label>
+                    <label for="msg_input">
+                        <textarea id="msg_input"></textarea>
+                    </label>
+                    <input type="button" aria-label="submits form data to local storage" class="submit_button" id="submit" value="Submit">
+                    <input type="button" aria-label="retrieves data from local storage" class="output_button" id="retrieve" value="Retrieve">
+                    <input type="button" aria-label="clears data in local storage" class="reset_button" id="reset" value="Reset">
+                    <pre id="output"></pre>
+                </form>
+            </div>
+            <div class="local_reference">
+                <ul>
+                    <li>JavaScript Reference: <a href="https://github.com/HIT226/Week-5-Local-Storage"><cite>HIT226/Week-5-Local-Storage</cite></a> </li>
+                    <li>Email Validation Reference:
+                        <a href="http://www.w3resource.com/javascript/form/email-validation.php/"> <cite>w3resource</cite></a>
+                    </li>
+                    <li>Alert Reference:
+                        <a href="http://t4t5.github.io/sweetalert/"> <cite>Sweet Alert</cite></a>
+                    </li>
+                    <li>CSS Reference:
+                        <a href="https://www.sanwebe.com/2014/08/css-html-forms-designs"> <cite>Sanwebe</cite></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <script type="text/javascript" src="js/vendor/sweetalert2.js"></script>
+            <script type="text/javascript" src="js/localstorage.js"></script>
+            
+            <div class="radiobuttons">
+                <h3>Radio Buttons</h3>
+                <p>
+                    <label>Radio Buttons Label:</label>
+                    <br />
+                    <label for="radio_button_1"><input type="radio" id="radio_button_1" name="radio_button" value="radio_1" /> Radio 1</label>
+                    
+                    <br/>
+                    <label for="radio_button_2">
+                    <input type="radio" id="radio_button_2" name="radio_button" value="radio_2" /> Radio 2</label> 
+                    
+                    <br/>
+                    <label for="radio_button_3">
+                    <input type="radio" id="radio_button_3" name="radio_button" value="radio_3" /> Radio 3</label>
+                    
+                    <br/> 
+                    
+                </p>
+            </div>
+            <div class="checkboxes">
+                <h3>Checkboxes</h3>
+                <p>
+                    <label>Checkboxes Label:</label>
+                    <br />
+                    <label for="checkbox_1">
+                    <input type="checkbox" id="checkbox_1" name="checkbox_1" value="checkbox_1" /> Checkbox 1 </label>
+                      
+                    <br />
+                    <label for="checkbox_2">
+                    <input type="checkbox" id="checkbox_2" name="checkbox_2" value="checkbox_2" />  Checkbox 2 </label>
+                    
+                    <br />
+                    <label for="checkbox_3">
+                    <input type="checkbox" id="checkbox_3" name="checkbox_3" value="checkbox_3" /> Checkbox 3</label> 
+                    
+                    <br/> 
+                </p>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p> Copyright &copy; 2017
+            <br> Jason Mu
+            <br> S213250
+            <br> </p>
+    </footer>
+</body>
+
+</html>
